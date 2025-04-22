@@ -1,0 +1,65 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions -->
+  <defs>
+    <!-- Flame gradient -->
+    <linearGradient id="flame-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5E3A" />
+      <stop offset="50%" stop-color="#FF9500" />
+      <stop offset="100%" stop-color="#FFCC00" />
+    </linearGradient>
+    
+    <!-- Text gradient -->
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#343a40" />
+      <stop offset="100%" stop-color="#495057" />
+    </linearGradient>
+    
+    <!-- Measurement lines gradient -->
+    <linearGradient id="measure-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06d6a0" />
+      <stop offset="100%" stop-color="#1b9aaa" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background (transparent) -->
+  <rect width="400" height="400" fill="none" />
+  
+  <!-- Main flame shape -->
+  <path d="M200,60 
+           C240,120 300,150 280,210
+           C270,250 230,270 200,300
+           C170,270 130,250 120,210
+           C100,150 160,120 200,60Z" 
+        fill="url(#flame-gradient)" />
+  
+  <!-- Inner flame shape -->
+  <path d="M200,100
+           C220,140 260,160 240,200
+           C230,225 210,240 200,260
+           C190,240 170,225 160,200
+           C140,160 180,140 200,100Z"
+        fill="white" fill-opacity="0.3" />
+  
+  <!-- Measurement lines (horizontal) -->
+  <line x1="120" y1="210" x2="280" y2="210" stroke="url(#measure-gradient)" stroke-width="4" stroke-linecap="round" />
+  <line x1="130" y1="250" x2="270" y2="250" stroke="url(#measure-gradient)" stroke-width="4" stroke-linecap="round" />
+  <line x1="160" y1="280" x2="240" y2="280" stroke="url(#measure-gradient)" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Measurement lines (vertical) -->
+  <line x1="200" y1="210" x2="200" y2="300" stroke="url(#measure-gradient)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6,3" />
+  
+  <!-- Small data points -->
+  <circle cx="160" cy="210" r="4" fill="#1b9aaa" />
+  <circle cx="200" cy="210" r="4" fill="#1b9aaa" />
+  <circle cx="240" cy="210" r="4" fill="#1b9aaa" />
+  
+  <circle cx="170" cy="250" r="4" fill="#1b9aaa" />
+  <circle cx="200" cy="250" r="4" fill="#1b9aaa" />
+  <circle cx="230" cy="250" r="4" fill="#1b9aaa" />
+  
+  <!-- Text: FLAME -->
+  <text x="200" y="340" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="url(#text-gradient)">FLAME</text>
+  
+  <!-- Tagline -->
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#495057">Few-shot Learning Assessment and Measurement Engine</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#e9ecef" />
+    </linearGradient>
+<!-- Box gradients -->
+<linearGradient id="stage1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0%" stop-color="#ffd166" />
+  <stop offset="100%" stop-color="#ffb347" />
+</linearGradient>
+
+<linearGradient id="stage2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0%" stop-color="#06d6a0" />
+  <stop offset="100%" stop-color="#1b9aaa" />
+</linearGradient>
+
+<linearGradient id="stage3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0%" stop-color="#ef476f" />
+  <stop offset="100%" stop-color="#c9184a" />
+</linearGradient>
+
+<linearGradient id="user-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0%" stop-color="#8338ec" />
+  <stop offset="100%" stop-color="#3a0ca3" />
+</linearGradient>
+
+<!-- Arrow markers -->
+<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+  <polygon points="0 0, 10 3.5, 0 7" fill="#495057" />
+</marker>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" rx="10" ry="10" />
+  <!-- Title -->
+<text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#212529">FLAME: Few-shot Learning Assessment and Measurement Engine</text>
+<text x="400" y="80" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#495057">Process Flow Diagram</text>
+  <!-- Stage 1: Sample Calibration -->
+  <rect x="100" y="130" width="600" height="120" rx="10" ry="10" fill="url(#stage1-gradient)" stroke="#343a40" stroke-width="2" opacity="0.9" />
+  <text x="400" y="155" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#343a40">Stage 1: Sample Calibration</text>
+  <!-- Stage 1 Components -->
+  <rect x="130" y="175" width="160" height="60" rx="5" ry="5" fill="white" stroke="#343a40" stroke-width="1" opacity="0.8" />
+  <text x="210" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#343a40">Generate Sample</text>
+  <text x="210" y="225" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#495057">Response Variants</text>
+  <rect x="320" y="175" width="160" height="60" rx="5" ry="5" fill="white" stroke="#343a40" stroke-width="1" opacity="0.8" />
+  <text x="400" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#343a40">Expert Selection</text>
+  <text x="400" y="225" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#495057">and Modification</text>
+  <rect x="510" y="175" width="160" height="60" rx="5" ry="5" fill="white" stroke="#343a40" stroke-width="1" opacity="0.8" />
+  <text x="590" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#343a40">Create "Anchor</text>
+  <text x="590" y="225" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#495057">Examples"</text>
+  <!-- Arrows for Stage 1 -->
+  <line x1="290" y1="205" x2="320" y2="205" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="480" y1="205" x2="510" y2="205" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Stage 2: Expert-Aligned Agent Development -->
+  <rect x="100" y="280" width="600" height="120" rx="10" ry="10" fill="url(#stage2-gradient)" stroke="#343a40" stroke-width="2" opacity="0.9" />
+  <text x="400" y="305" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#343a40">Stage 2: Expert-Aligned Agent Development</text>
+  <!-- Stage 2 Components -->
+  <rect x="130" y="325" width="160" height="60" rx="5" ry="5" fill="white" stroke="#343a40" stroke-width="1" opacity="0.8" />
+  <text x="210" y="355" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#343a40">Expert Evaluation</text>
+  <text x="210" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#495057">with Rationales</text>
+  <rect x="320" y="325" width="160" height="60" rx="5" ry="5" fill="white" stroke="#343a40" stroke-width="1" opacity="0.8" />
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#343a40">Few-shot Example</text>
+  <text x="400" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#495057">Selection</text>
+  <rect x="510" y="325" width="160" height="60" rx="5" ry="5" fill="white" stroke="#343a40" stroke-width="1" opacity="0.8" />
+  <text x="590" y="355" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#343a40">Agent Building</text>
+  <text x="590" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#495057">and Configuration</text>
+  <!-- Arrows for Stage 2 -->
+  <line x1="290" y1="355" x2="320" y2="355" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="480" y1="355" x2="510" y2="355" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Connection from Stage 1 to Stage 2 -->
+  <line x1="400" y1="250" x2="400" y2="280" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Stage 3: Multi-Expert Consensus Implementation -->
+  <rect x="100" y="430" width="600" height="50" rx="10" ry="10" fill="url(#stage3-gradient)" stroke="#343a40" stroke-width="2" opacity="0.9" />
+  <text x="400" y="462" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#343a40">Stage 3: Multi-Expert Consensus Implementation</text>
+  <!-- Connection from Stage 2 to Stage 3 -->
+  <line x1="400" y1="400" x2="400" y2="430" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- User Interaction -->
+  <rect x="230" y="510" width="340" height="60" rx="10" ry="10" fill="url(#user-gradient)" stroke="#343a40" stroke-width="2" opacity="0.9" />
+  <text x="400" y="545" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">User Content Evaluation</text>
+  <!-- Connection from Stage 3 to User -->
+  <line x1="400" y1="480" x2="400" y2="510" stroke="#495057" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Legend -->
+  <rect x="625" y="510" width="150" height="75" rx="5" ry="5" fill="white" stroke="#343a40" stroke-width="1" opacity="0.8" />
+  <text x="650" y="530" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#343a40">Legend:</text>
+  <rect x="650" y="540" width="12" height="12" fill="url(#stage1-gradient)" stroke="#343a40" stroke-width="1" />
+  <text x="670" y="550" font-family="Arial, sans-serif" font-size="10" fill="#343a40">Calibration</text>
+  <rect x="650" y="555" width="12" height="12" fill="url(#stage2-gradient)" stroke="#343a40" stroke-width="1" />
+  <text x="670" y="565" font-family="Arial, sans-serif" font-size="10" fill="#343a40">Agent Development</text>
+  <rect x="650" y="570" width="12" height="12" fill="url(#stage3-gradient)" stroke="#343a40" stroke-width="1" />
+  <text x="670" y="580" font-family="Arial, sans-serif" font-size="10" fill="#343a40">Consensus Building</text>
+</svg>
