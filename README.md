@@ -42,8 +42,8 @@ Drawing from psychometric test development methods, FLAME establishes a hierarch
 
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/flame.git
-cd flame
+git clone https://github.com/psylch/FLAME.git
+cd FLAME
 ```
 
 2. Create a virtual environment:
